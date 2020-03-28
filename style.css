@@ -1,0 +1,177 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mainCard {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 550px 5%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+
+    align-self: center;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 20% 40%;
+}
+
+header h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 4ch;
+
+    align-self: flex-end;
+}
+
+header h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 4ch;
+
+    align-self: flex-start;
+}
+
+header p {
+    text-align: center;
+    width: 45%;
+    margin-left: 27.5%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "card1 card2 card3"
+        "card1 card4 card3";
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+main .card {
+    width: 300px !important;
+    height: 250px !important;
+    align-self: center;
+    margin: auto;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 10px 28px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 28px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 28px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card .textContainer {
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+}
+.textContainer h1 {
+    color: hsl(234, 12%, 34%);
+    font-size: 2ch;
+    margin-bottom: 2.5%;
+}
+
+.textContainer img {
+    align-self: center;
+    width: 20%;
+    margin-left: 80%;
+}
+/*supervisor*/
+main #card1 {
+    grid-area: card1;
+    align-self: center;
+    border-top: 5px hsl(180, 62%, 55%) solid;
+}
+
+/*team builder*/
+main #card2 {
+    grid-area: card2;
+    border-top: 5px hsl(0, 78%, 62%) solid;
+}
+
+/*calculator*/
+main #card3 {
+    grid-area: card3;
+    align-self: center;
+    border-top: 5px hsl(212, 86%, 64%) solid;
+}
+
+/*karma*/
+main #card4 {
+    grid-area: card4;
+    border-top: 5px hsl(34, 97%, 64%) solid;
+}
+
+footer p {
+    align-self: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .mainCard {
+        grid-template-rows: 35% 1000px 5%;
+    }
+
+    main {
+        height: 1000px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 250px);
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card4"
+            "card3";
+    }
+
+    main .card {
+        width: 250px !important;
+        height: 200px !important;
+        align-self: center;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.5ch;
+    }
+    header h2 {
+        font-size: 2.5ch;
+    }
+
+    header p {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
