@@ -23,7 +23,7 @@
 
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 35% 550px 5%;
+    grid-template-rows: 30% 65% 5%;
 }
 
 header {
@@ -41,7 +41,7 @@ header {
 header h1 {
     color: hsl(234, 12%, 34%);
     font-weight: 200;
-    font-size: 4ch;
+    font-size: 3.5ch;
 
     align-self: flex-end;
 }
@@ -49,7 +49,7 @@ header h1 {
 header h2 {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
-    font-size: 4ch;
+    font-size: 3.5ch;
 
     align-self: flex-start;
 }
@@ -73,8 +73,8 @@ main {
 }
 
 main .card {
-    width: 300px !important;
-    height: 250px !important;
+    width: 250px;
+    height: 90%;
     align-self: center;
     margin: auto;
 
@@ -112,6 +112,7 @@ main #card1 {
     grid-area: card1;
     align-self: center;
     border-top: 5px hsl(180, 62%, 55%) solid;
+    height: 45%;
 }
 
 /*team builder*/
@@ -125,6 +126,7 @@ main #card3 {
     grid-area: card3;
     align-self: center;
     border-top: 5px hsl(212, 86%, 64%) solid;
+    height: 45%;
 }
 
 /*karma*/
