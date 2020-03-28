@@ -139,7 +139,7 @@ footer p {
     align-self: center;
 }
 
-@media only screen and (max-width: 1200px), only screen and (max-height: 650px) {
+@media only screen and (max-width: 1200px), only screen and (max-height: 350px) {
     .mainCard {
         grid-template-rows: 35% 1000px 5%;
     }
@@ -178,7 +178,7 @@ footer p {
     }
 }
 
-@media only screen and (max-height: 450px) {
+@media only screen and (max-height: 350px) {
     .mainCard {
         grid-template-rows: 200px 65% 5%;
     }
