@@ -178,7 +178,7 @@ footer p {
     }
 }
 
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 450px) {
     .mainCard {
         grid-template-rows: 200px 65% 5%;
     }
